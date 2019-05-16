@@ -1,0 +1,7 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: "header " 
+                             "second-block";
+    }
+}
