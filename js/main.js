@@ -11,4 +11,8 @@ function view(n) {
         //document.getElementByClass(section-faq__items__item__list__arrow).style.Transorm
     }
         //(style.display == 'block') ? 'none' : 'block';
-}
+};
+
+/*$(document).ready(function() {
+    $('.header-contacts__link').magnificPopup();
+});*/

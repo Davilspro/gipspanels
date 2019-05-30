@@ -1,0 +1,41 @@
+@media (min-width: 1200px) {
+    
+}
+
+@media (max-width: 1200px) {
+    html, body {
+        font-size: 20px;
+    }
+    
+    .wrapper {
+        grid-template-columns: 0.5fr 3fr 0.5fr;
+        grid-row: 1fr 1fr 1fr;
+        
+        .header {
+            justify-items: center;
+            align-items: center;
+            height: 10rem;
+
+            &-logo {
+                grid-column: 1/4;
+                grid-row: 1/2;            
+            }
+
+            &-contacts {
+                grid-column: 1/4;
+                grid-row: 2/3; 
+                padding: 1em;
+            }
+
+            &-nav {
+                grid-column: 1/4;
+                grid-row: 3/4; 
+                padding: 1em;
+            }
+        }
+
+        .section-advantage {
+            font-size: 18px;
+        }
+    }
+}
