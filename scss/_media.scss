@@ -1,8 +1,16 @@
-@media (min-width: 1200px) {
-    
+@media (min-width: 1600px) {
+    html, body {
+        font-size: 14px;
+    }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1599px)  {
+    html, body {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1199px) {
     html, body {
         font-size: 20px;
     }
@@ -31,6 +39,24 @@
                 grid-column: 1/4;
                 grid-row: 3/4; 
                 padding: 1em;
+            }
+        }
+
+        .second-block {
+            grid-template-columns: 1fr 1fr;
+
+            &__button {
+              //  margin-left: 0em;
+            }
+
+            &__imgblock {
+                height: 22em;
+                width: 22em;
+
+                &__img {
+                    height: 25.25em;
+                    margin-left: -14.75em;
+                }
             }
         }
 
