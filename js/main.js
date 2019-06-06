@@ -19,10 +19,12 @@ function view(n) {
 
 function opac(n) {    
     style = document.getElementById(n).style;
-    if (style.opacity == '0') {
+    if (style.opacity == '0' and style.display == 'none') {
         style.opacity ='1';
+        style.display = 'block'
     }
     else {
-        style.opacity ='0';        
+        style.opacity ='0';  
+        style.display = 'none'
     }
 };
