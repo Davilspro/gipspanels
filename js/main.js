@@ -16,3 +16,13 @@ function view(n) {
 /*$(document).ready(function() {
     $('.header-contacts__link').magnificPopup();
 });*/
+
+function opac(n) {    
+    style = document.getElementById(n).style;
+    if (style.opacity == '0') {
+        style.opacity ='1';
+    }
+    else {
+        style.opacity ='0';        
+    }
+};

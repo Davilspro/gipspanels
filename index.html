@@ -20,14 +20,28 @@
                 <a href="portf.html" class="header-nav__link">Портфолио</a>
                 <a href="#" class="header-nav__link">Как купить</a>
                 <a href="#" class="header-nav__link">О нас</a>
-                <a href="#" class="header-nav__link">Партнерам</a>
+                <!--<a href="#" class="header-nav__link">Партнерам</a>-->
                 <a href="#" class="header-nav__link">Контакты</a>
             </nav>      
             <div class="header-contacts">
-                <a href="#callback" class="header-contacts__link">8 800 123 65-85</a>
-                <a href="#callback" class="header-contacts__link ">заказать звонок</a>
+                <a href="#callback" onclick="opac('callback');" class="header-contacts__link">8 800 123 65-85</a>
+                <a href="#callback" onclick="opac('callback');" class="header-contacts__link ">заказать звонок</a>
             </div>
         </header>
+        <div class="callback" id="callback">
+            <h4 class="callback__h4">
+                Заказать<br> бесплатный звонок
+            </h4>
+            <label class="callback__label">
+                <span class="callback__label__title">Ваше имя</span>
+                <input type="text" placeholder="Например: Петя" class="callback__label__input">
+            </label>
+            <label class="callback__label">
+                <span class="callback__label__title">Ваш номер телефона</span>
+                <input type="text" placeholder="+7 (___) ____ __-__" class="callback__label__input">
+            </label>
+            <input type="submit" class="callback__submit" value="Получить консультацию">
+        </div>
         <div class="second-block">
             <div class="second-block__imgblock">
                 <img src="images/second-block__imgblock__img.jpg" alt="гипсовая панель" class="second-block__imgblock__img">
