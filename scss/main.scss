@@ -127,7 +127,7 @@ html, body {
         background: lighten($main_color, 47%);
         position: fixed;
         opacity: 0;
-        transition: ease-in-out all 0.3s;
+        transition: ease-in-out opacity 0.3s;
         top: 20%;
         z-index: 3;
         left: 37%;
@@ -135,6 +135,7 @@ html, body {
         box-shadow: 0px 0px 5em $main_color;
         padding: 1em;
         text-align: center;
+        display: none;
         //outline: 100em solid rgba(0,0,0,0.5);
         //width: 100%;
         //height: 100%;
