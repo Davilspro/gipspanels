@@ -19,12 +19,32 @@ function view(n) {
 
 function opac(n) {    
     style = document.getElementById(n).style;
-    if (style.opacity == '0' and style.display == 'none') {
+
+    if (style.opacity == '0' && style.display == 'none') {
         style.opacity ='1';
-        style.display = 'block'
+        style.display = 'flex'
     }
     else {
         style.opacity ='0';  
         style.display = 'none'
     }
 };
+
+function cart(n) {    
+    style = document.getElementById('section-cart').style;        
+    cartElemsImg=document.getElementsByClassName('section-cart-block__img');
+    console.log(cartElemsImg.src);
+    cartElemsImg.src = n; 
+    console.log(cartElemsImg.src);
+
+    if ( style.display == 'none' && style.opacity == '0') {
+        style.opacity ='1';
+        style.display = 'flex'
+    }
+    else {
+        style.opacity ='0';  
+        style.display = 'none'
+    }
+};
+
+//this.parentElement.querySelector('img').src

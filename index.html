@@ -29,19 +29,23 @@
                 <a href="#callback" onclick="opac('callback');" class="header-contacts__link ">заказать звонок</a>
             </div>
         </header>
-        <div class="callback" id="callback">
-            <h4 class="callback__h4">
+        <div class="section-callback" id="callback">
+            <div class="section-callback-wrap"></div>
+            <div class="section-callback-form" >
+            <a href="#" class ="section-callback-form__cross cross" onclick="opac('callback');"><i class="fas fa-times"></i></a>
+            <h4 class="section-callback-form__h4">
                 Заказать<br> бесплатный звонок
             </h4>
-            <label class="callback__label">
-                <span class="callback__label__title">Ваше имя</span>
-                <input type="text" placeholder="Например: Петя" class="callback__label__input">
+            <label class="section-callback-form__label">
+                <span class="section-callback-form__label__title">Ваше имя</span>
+                <input type="text" placeholder="Например: Петя" class="section-callback-form__label__input">
             </label>
-            <label class="callback__label">
-                <span class="callback__label__title">Ваш номер телефона</span>
-                <input type="text" placeholder="+7 (___) ____ __-__" class="callback__label__input">
+            <label class="section-callback-form__label">
+                <span class="section-callback-form__label__title">Ваш номер телефона</span>
+                <input type="text" placeholder="+7 (___) ____ __-__" class="section-callback-form__label__input">
             </label>
-            <input type="submit" class="callback__submit" value="Получить консультацию">
+            <input type="submit" class="section-callback-form__submit" value="Получить консультацию">
+        </div>
         </div>
         <div class="second-block">
             <div class="second-block__imgblock">
@@ -88,17 +92,28 @@
                     <p class="section-advantage__items__item__p">Даем гарантию на материалы и монтаж по договору 15 лет!</p>
                 </div>
         </section>
+        <div class="section-cart" id="section-cart">
+            <div class="section-cart-block">
+                <a href="#" class="cross section-cart-block__cross" onclick="cart();"><i class="fas fa-times"></i></a>
+                <img src="images/ostrie-volni_model.jpg" alt="" class="section-cart-block__img">
+                <h3 class="section-cart-block__h3">Острые волны</h3>
+                <span class="section-cart-block__colichspan">Количество панелей</span>
+                <input type="text" class="section-cart-block__colichinput">
+                
+
+            </div>
+        </div>
         <section class="section-best">
             <h2 class="section-best__h2 h2">
                 Самые продаваемые 3D панели
             </h2>
             <div class="section-best__items">
                 <div class="section-best__items__item">
-                    <img src="images/ostrie-volni_model.jpg" alt="" class="section-best__items__item__img">
+                    <img src="images/section-comments__items__item__img.png" alt="" class="section-best__items__item__img">
                     <span class="section-best__items__item__name">Острые волны</span>
                     <span class="section-best__items__item__desc">500 x 500</span>
                     <span class="section-best__items__item__price">550 р.</span>
-                    <a href="#" class="section-best__items__item__button">Купить</a>        
+                    <a href="#" onclick="cart('images/section-comments__items__item__img.png')" class="section-best__items__item__button">Купить</a>        
                 </div>
                 <div class="section-best__items__item">
                     <img src="images/ostrie-volni_model.jpg" alt="" class="section-best__items__item__img">
