@@ -25,14 +25,18 @@
                 <a href="#" class="header-nav__link">Контакты</a>
             </nav>      
             <div class="header-contacts">
-                <a href="#callback" onclick="opac('callback');" class="header-contacts__link">8 800 123 65-85</a>
-                <a href="#callback" onclick="opac('callback');" class="header-contacts__link ">заказать звонок</a>
+                <a href="#callback" onclick="opac('#callback');" class="header-contacts__link">8 800 123 65-85</a>
+                <a href="#callback" onclick="opac('#callback');" class="header-contacts__link ">заказать звонок</a>
             </div>
         </header>
         <div class="section-callback" id="callback">
             <div class="section-callback-wrap"></div>
             <div class="section-callback-form" >
-            <a href="#" class ="section-callback-form__cross cross" onclick="opac('callback');"><i class="fas fa-times"></i></a>
+            <div class="section-callback-form__good">
+                <i class="fas fa-phone section-callback-form__good__papper"></i>
+                <span class="section-callback-form__good__span">Вскоре мы с вами свяжемся!</span>
+            </div>
+            <a href="#" class ="section-callback-form__cross cross" onclick="opac('#callback');"><i class="fas fa-times"></i></a>
             <h4 class="section-callback-form__h4">
                 Заказать<br> бесплатный звонок
             </h4>
@@ -92,15 +96,23 @@
                     <p class="section-advantage__items__item__p">Даем гарантию на материалы и монтаж по договору 15 лет!</p>
                 </div>
         </section>
-        <div class="section-cart" id="section-cart">
+        <div class="section-cart">
+            <div class="section-cart-wrap"></div>
             <div class="section-cart-block">
-                <a href="#" class="cross section-cart-block__cross" onclick="cart();"><i class="fas fa-times"></i></a>
+                <div class="section-cart-block__good">
+                        <i class="far fa-paper-plane section-cart-block__good__papper"></i>
+                        <span class="section-cart-block__good__span">Заявка успешно отправлена!</span>
+                </div>
+                <a href="#section-cart" class="cross section-cart-block__cross"><i class="fas fa-times"></i></a>
                 <img src="images/ostrie-volni_model.jpg" alt="" class="section-cart-block__img">
                 <h3 class="section-cart-block__h3">Острые волны</h3>
                 <span class="section-cart-block__colichspan">Количество панелей</span>
-                <input type="text" class="section-cart-block__colichinput">
-                
-
+                <input type="text" class="section-cart-block__colichinput">                
+                <a href="#section-cart" class="section-cart-block__sum">Подсчитать сумму</a>
+                <span class="section-cart-block__itog"></span>
+                <span class="section-cart-block__telName">Ваш номер телефона</span>
+                <input type="text" class="section-cart-block__tel" placeholder="+7 ( ___ ) - ___ - __ - __">
+                <input type="submit" class="section-cart-block__zakaz" value="Отправить заявку">                                
             </div>
         </div>
         <section class="section-best">
@@ -109,48 +121,54 @@
             </h2>
             <div class="section-best__items">
                 <div class="section-best__items__item">
-                    <img src="images/section-comments__items__item__img.png" alt="" class="section-best__items__item__img">
-                    <span class="section-best__items__item__name">Острые волны</span>
+                    <img src="images/second-block__imgblock__img.jpg" alt="" class="section-best__items__item__img">
+                    <span class="section-best__items__item__name">Панель 1</span>
                     <span class="section-best__items__item__desc">500 x 500</span>
-                    <span class="section-best__items__item__price">550 р.</span>
-                    <a href="#" onclick="cart('images/section-comments__items__item__img.png')" class="section-best__items__item__button">Купить</a>        
+                    <span class="section-best__items__item__price">550 <i class="fas fa-ruble-sign"></i></span>
+                    <a href="#section-cart" class="section-best__items__item__button">Купить</a>        
+                </div>
+                <div class="section-best__items__item">
+                    <img src="images/1second-block__img.png" alt="" class="section-best__items__item__img">
+                    <span class="section-best__items__item__name">Панель 2</span>
+                    <span class="section-best__items__item__desc">500 x 500</span>
+                    <span class="section-best__items__item__price">550 <i class="fas fa-ruble-sign"></i></span>
+                    <a href="#section-cart" class="section-best__items__item__button">Купить</a>        
+                </div>
+                <div class="section-best__items__item">
+                    <img src="images/second-block__img.png" alt="" class="section-best__items__item__img">
+                    <span class="section-best__items__item__name">Панель 3</span>
+                    <span class="section-best__items__item__desc">500 x 500</span>
+                    <span class="section-best__items__item__price">550 <i class="fas fa-ruble-sign"></i></span>
+                    <a href="#section-cart" class="section-best__items__item__button">Купить</a>        
                 </div>
                 <div class="section-best__items__item">
                     <img src="images/ostrie-volni_model.jpg" alt="" class="section-best__items__item__img">
-                    <span class="section-best__items__item__name">Острые волны</span>
+                    <span class="section-best__items__item__name">Панель 3</span>
                     <span class="section-best__items__item__desc">500 x 500</span>
-                    <span class="section-best__items__item__price">550 р.</span>
-                    <a href="#" class="section-best__items__item__button">Купить</a>
+                    <span class="section-best__items__item__price">550 <i class="fas fa-ruble-sign"></i></span>
+                    <a href="#section-cart" class="section-best__items__item__button">Купить</a>        
                 </div>
                 <div class="section-best__items__item">
-                    <img src="images/ostrie-volni_model.jpg" alt="" class="section-best__items__item__img">
-                    <span class="section-best__items__item__name">Острые волны</span>
+                    <img src="images/second-block__imgblock__img.jpg" alt="" class="section-best__items__item__img">
+                    <span class="section-best__items__item__name">Панель 3</span>
                     <span class="section-best__items__item__desc">500 x 500</span>
-                    <span class="section-best__items__item__price">550 р.</span>
-                    <a href="#" class="section-best__items__item__button">Купить</a>
+                    <span class="section-best__items__item__price">550 <i class="fas fa-ruble-sign"></i></span>
+                    <a href="#section-cart" class="section-best__items__item__button">Купить</a>        
                 </div>
                 <div class="section-best__items__item">
-                    <img src="images/ostrie-volni_model.jpg" alt="" class="section-best__items__item__img">
-                    <span class="section-best__items__item__name">Острые волны</span>
+                    <img src="images/second-block__imgblock__img.jpg" alt="" class="section-best__items__item__img">
+                    <span class="section-best__items__item__name">Панель 3</span>
                     <span class="section-best__items__item__desc">500 x 500</span>
-                    <span class="section-best__items__item__price">550 р.</span>
-                    <a href="#" class="section-best__items__item__button">Купить</a>
+                    <span class="section-best__items__item__price">550 <i class="fas fa-ruble-sign"></i></span>
+                    <a href="#section-cart" class="section-best__items__item__button">Купить</a>        
                 </div>
                 <div class="section-best__items__item">
-                    <img src="images/ostrie-volni_model.jpg" alt="" class="section-best__items__item__img">
-                    <span class="section-best__items__item__name">Острые волны</span>
+                    <img src="images/second-block__imgblock__img.jpg" alt="" class="section-best__items__item__img">
+                    <span class="section-best__items__item__name">Панель 3</span>
                     <span class="section-best__items__item__desc">500 x 500</span>
-                    <span class="section-best__items__item__price">550 р.</span>
-                    <a href="#" class="section-best__items__item__button">Купить</a>
+                    <span class="section-best__items__item__price">550 <i class="fas fa-ruble-sign"></i></span>
+                    <a href="#section-cart" class="section-best__items__item__button">Купить</a>        
                 </div>
-                <div class="section-best__items__item">
-                    <img src="images/ostrie-volni_model.jpg" alt="" class="section-best__items__item__img">
-                    <span class="section-best__items__item__name">Острые волны</span>
-                    <span class="section-best__items__item__desc">500 x 500</span>
-                    <span class="section-best__items__item__price">550 р.</span>
-                    <a href="#" class="section-best__items__item__button">Купить</a>
-                </div>
-                
             </div>
 
         </section>
