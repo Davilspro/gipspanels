@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <title>main</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="index.html" class="header-logo">
+                <img src="images/logo.png" alt="Логотип GiplsPanels">
+            </a>
+            <nav class="header-nav">
+                <a href="catalog.html" class="header-nav__link">Каталог</a>
+                <a href="portf.html" class="header-nav__link">Портфолио</a>
+                <!--<a href="#" class="header-nav__link">Как купить</a>
+                <a href="#" class="header-nav__link">О нас</a>
+                <a href="#" class="header-nav__link">Партнерам</a>-->
+                <a href="contacts.html" class="header-nav__link">Контакты</a>
+            </nav>      
+            <div class="header-contacts">
+                <a href="#callback" onclick="opac('#callback');" class="header-contacts__link">8 800 123 65-85</a>
+                <a href="#callback" onclick="opac('#callback');" class="header-contacts__link ">заказать звонок</a>
+            </div>
+        </header>
+        <div class="section-callback" id="callback">
+            <div class="section-callback-wrap"></div>
+            <div class="section-callback-form" >
+            <div class="section-callback-form__good">
+                <i class="fas fa-phone section-callback-form__good__papper"></i>
+                <span class="section-callback-form__good__span">Вскоре мы с вами свяжемся!</span>
+            </div>
+            <a href="#" class ="section-callback-form__cross cross"><i class="fas fa-times"></i></a>
+            <h4 class="section-callback-form__h4">
+                Заказать<br> бесплатный звонок
+            </h4>
+            <label class="section-callback-form__label">
+                <span class="section-callback-form__label__title">Ваше имя</span>
+                <input type="text" placeholder="Например: Петя" class="section-callback-form__label__input">
+            </label>
+            <label class="section-callback-form__label">
+                <span class="section-callback-form__label__title">Ваш номер телефона</span>
+                <input type="text" placeholder="+7 (___) ____ __-__" class="section-callback-form__label__input">
+            </label>
+            <input type="submit" class="section-callback-form__submit" value="Получить консультацию">
+        </div>
+        </div>
+        <footer class="footer">
+            <span class="footer__copy">
+                Gips Panels 2019 г.
+            </span>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-vk footer-social__icon"></i></a>
+                <a href="#"><i class="fab fa-instagram footer-social__icon"></i></a>
+                <a href="#"><i class="fab fa-facebook footer-social__icon"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+    <script src="libs/jquery-2.1.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>

@@ -19,10 +19,10 @@
             <nav class="header-nav">
                 <a href="catalog.html" class="header-nav__link">Каталог</a>
                 <a href="portf.html" class="header-nav__link">Портфолио</a>
-                <a href="#" class="header-nav__link">Как купить</a>
+                <!--<a href="#" class="header-nav__link">Как купить</a>
                 <a href="#" class="header-nav__link">О нас</a>
-                <!--<a href="#" class="header-nav__link">Партнерам</a>-->
-                <a href="#" class="header-nav__link">Контакты</a>
+                <a href="#" class="header-nav__link">Партнерам</a>-->
+                <a href="contacts.html" class="header-nav__link">Контакты</a>
             </nav>      
             <div class="header-contacts">
                 <a href="#callback" onclick="opac('#callback');" class="header-contacts__link">8 800 123 65-85</a>
@@ -36,7 +36,7 @@
                 <i class="fas fa-phone section-callback-form__good__papper"></i>
                 <span class="section-callback-form__good__span">Вскоре мы с вами свяжемся!</span>
             </div>
-            <a href="#" class ="section-callback-form__cross cross" onclick="opac('#callback');"><i class="fas fa-times"></i></a>
+            <a href="#" class ="section-callback-form__cross cross"><i class="fas fa-times"></i></a>
             <h4 class="section-callback-form__h4">
                 Заказать<br> бесплатный звонок
             </h4>
@@ -241,11 +241,15 @@
         </section>
         <section class="section-application">
             <div class="section-application__app">
+                <div class="section-application__app__good">
+                        <i class="fas fa-phone section-application__app__good__papper"></i>
+                        <span class="section-application__app__good__span">Вскоре мы с вами свяжемся!</span>
+                </div>
                 <h4 class="section-application__app__h4">
-                    Оставьте заявку<br> на бесплатный замер<br> и консультацию
+                    Остались вопросы?<br> Мы вам непременно перезвоним
                 </h4>
                 <span class="section-application__app__span">
-                    Наш менеджер свяжется с вами в течении 15 минут и уточнит детали.
+                    Наш менеджер свяжется с вами в течении 15 минут.
                 </span>
                 <label class="section-application__app__label">
                     <span class="section-application__app__label__title">Ваше имя</span>
@@ -270,9 +274,9 @@
         </footer>
     </div>
     <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
-    
+    <script src="libs/jquery-2.1.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

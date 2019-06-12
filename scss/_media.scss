@@ -65,3 +65,20 @@
         }
     }
 }
+
+@media (max-width: 809px) {
+    html, body {
+        font-size: 15px;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+
+        .second-block {
+
+            &__button {
+                margin-top: 5em !important;
+            }
+        }
+    }    
+}
