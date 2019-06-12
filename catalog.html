@@ -16,11 +16,11 @@
                 <img src="images/logo.png" alt="Логотип GiplsPanels">
             </a>
             <nav class="header-nav">
-                <a href="catalog.html" class="header-nav__link">Каталог</a>
+                <a href="index.html" class="header-nav__link">Главная</a>
                 <a href="portf.html" class="header-nav__link">Портфолио</a>
-                <a href="#" class="header-nav__link">Как купить</a>
+                <!--<a href="#" class="header-nav__link">Как купить</a>
                 <a href="#" class="header-nav__link">О нас</a>
-                <!--<a href="#" class="header-nav__link">Партнерам</a>-->
+                <a href="#" class="header-nav__link">Партнерам</a>-->
                 <a href="#" class="header-nav__link">Контакты</a>
             </nav>      
             <div class="header-contacts">
@@ -30,8 +30,34 @@
         </header>
         
         <h3 class="h3">Каталог</h3>
+        <div class="section-cart">
+                <div class="section-cart-wrap"></div>
+                <div class="section-cart-block">
+                    <div class="section-cart-block__good">
+                            <i class="far fa-paper-plane section-cart-block__good__papper"></i>
+                            <span class="section-cart-block__good__span">Заявка успешно отправлена!</span>
+                    </div>
+                    <a href="#section-cart" class="cross section-cart-block__cross"><i class="fas fa-times"></i></a>
+                    <img src="images/ostrie-volni_model.jpg" alt="" class="section-cart-block__img">
+                    <h3 class="section-cart-block__h3">Острые волны</h3>
+                    <span class="section-cart-block__colichspan">Количество панелей</span>
+                    <input type="text" class="section-cart-block__colichinput">                
+                    <a href="#section-cart" class="section-cart-block__sum">Подсчитать сумму</a>
+                    <span class="section-cart-block__itog"></span>
+                    <span class="section-cart-block__telName">Ваш номер телефона</span>
+                    <input type="text" class="section-cart-block__tel" placeholder="+7 ( ___ ) - ___ - __ - __">
+                    <input type="submit" class="section-cart-block__zakaz" value="Отправить заявку">                                
+                </div>
+            </div>
         <section class="section-catalog">
             <div class="section-catalog__items">
+                <div class="section-catalog__items__item">
+                    <img src="images/second-block__imgblock__img.jpg" alt="" class="section-catalog__items__item__img">
+                    <span class="section-catalog__items__item__name">Панель 1</span>
+                    <span class="section-catalog__items__item__desc">500 x 500</span>
+                    <span class="section-catalog__items__item__price">550 <i class="fas fa-ruble-sign"></i></span>
+                    <a href="#section-cart" class="section-catalog__items__item__button">Купить</a>        
+                </div>
                 <div class="section-catalog__items__item">
                     <img src="images/ostrie-volni_model.jpg" alt="" class="section-best__items__item__img">
                     <span class="section-catalog__items__item__name">Острые волны</span>

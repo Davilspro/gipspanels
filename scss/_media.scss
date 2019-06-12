@@ -22,7 +22,6 @@
         .header {
             justify-items: center;
             align-items: center;
-            height: 10rem;
 
             &-logo {
                 grid-column: 1/4;
@@ -68,17 +67,63 @@
 
 @media (max-width: 809px) {
     html, body {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .wrapper {
-        grid-template-columns: 1fr;
+        grid-template-columns: 0fr 1fr 0fr;
+
+        .header {
+            font-size: 1.5em;
+        }
+
+        .second-block {
+            &__text {
+                font-size: 2em;
+            }
+
+            &__button {
+                margin-top: 2em !important;
+                margin-left: 0;
+                font-size: 1em;
+            }
+
+            &__imgblock {
+                font-size: 0.8em;
+            }
+
+            &__circle {
+                font-size: 0.8em;
+            }
+        }
+
+        .section-best {
+            font-size: 1.5em;
+        }
+
+        .section-comments {
+            font-size: 1.5em;
+        }
+
+        .section-faq {
+            font-size: 1.5em;
+        }
+    }    
+}
+
+@media (max-width: 499px) {
+    html, body {
+    }
+
+    .wrapper {
 
         .second-block {
 
             &__button {
-                margin-top: 5em !important;
+                font-size: 0.9em;
             }
         }
+
+        
     }    
 }

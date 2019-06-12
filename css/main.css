@@ -89,7 +89,7 @@ html, body {
   .wrapper .header {
     width: 100%;
     background: #f5f6fa;
-    height: 5.6rem;
+    padding: 0.6em 0;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-row: 1fr;
@@ -107,7 +107,7 @@ html, body {
       grid-column: 1/2;
       grid-row: 1/2; }
       .wrapper .header-logo > img {
-        height: 3.75rem; }
+        height: 3.75em; }
     .wrapper .header-nav {
       grid-area: header-nav;
       justify-self: center;
@@ -117,7 +117,7 @@ html, body {
         margin: 0 0.6em;
         text-decoration: none;
         font-family: "Roboto", sans-serif;
-        font-size: 1rem;
+        font-size: 1em;
         font-weight: 400;
         color: #002c53;
         position: relative;
@@ -158,10 +158,10 @@ html, body {
       -ms-flex-pack: end;
       justify-content: flex-end;
       padding: 0 0.9rem;
-      width: 18.75rem; }
+      width: 18.75em; }
       .wrapper .header-contacts__link {
         text-decoration: none;
-        font-size: 0.9rem;
+        font-size: 0.9em;
         font-family: "Roboto", sans-serif;
         font-weight: 500;
         margin: 0 2%;
@@ -407,15 +407,20 @@ html, body {
       z-index: 1;
       width: 100%;
       height: 100%; }
+      .wrapper .cartGallery-wrap:hover {
+        cursor: pointer; }
       .wrapper .cartGallery-wrap:hover .cartGallery-wrap__cross {
         color: #fff; }
       .wrapper .cartGallery-wrap__cross {
-        font-size: 3em;
+        font-size: 2em;
         margin: 0.5em 1em;
-        color: #e7e7e7; }
+        color: #e7e7e7;
+        z-index: 15; }
     .wrapper .cartGallery__imgBlock {
       position: relative;
-      z-index: 2; }
+      z-index: 2;
+      -webkit-box-shadow: 0 0 5em rgba(0, 0, 0, 0.8);
+      box-shadow: 0 0 5em rgba(0, 0, 0, 0.8); }
       .wrapper .cartGallery__imgBlock__zone {
         width: 50px;
         height: 100%;
@@ -457,7 +462,8 @@ html, body {
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px; }
       .wrapper .cartGallery__imgBlock__img {
-        width: 500px;
+        max-width: 30em;
+        min-width: 10em;
         border-radius: 8px; }
   .wrapper .gallery {
     grid-column: 2/3;
@@ -730,7 +736,8 @@ html, body {
   .wrapper .section-best, .wrapper .section-catalog {
     grid-column: 2/3;
     grid-row: 4/5;
-    margin-top: 3.12em; }
+    margin-top: 3.12em;
+    font-size: 1em; }
     .wrapper .section-best__h2:after, .wrapper .section-catalog__h2:after {
       left: 5.62em; }
     .wrapper .section-best__h2:before, .wrapper .section-catalog__h2:before {
@@ -828,11 +835,7 @@ html, body {
   .wrapper .section-comments {
     grid-column: 2/3;
     grid-row: 5/6;
-    margin-top: 50px; }
-    .wrapper .section-comments__h2:after {
-      left: 120px; }
-    .wrapper .section-comments__h2:before {
-      right: 120px; }
+    margin-top: 3em; }
     .wrapper .section-comments__items {
       display: -webkit-box;
       display: -webkit-flex;
@@ -855,10 +858,10 @@ html, body {
       -ms-flex-pack: center;
       justify-content: center; }
       .wrapper .section-comments__items__item {
-        width: 230px;
-        padding: 10px; }
+        width: 15em;
+        padding: 0.7em; }
         .wrapper .section-comments__items__item__img {
-          width: 180px;
+          width: 11.25em;
           border-radius: 50%;
           -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -866,42 +869,47 @@ html, body {
           margin: 0 auto; }
         .wrapper .section-comments__items__item__name {
           display: block;
-          font-size: 18px;
+          font-size: 1.1em;
           font-weight: 600;
-          padding: 10px 0;
+          padding: 0.6em 0;
           text-align: center; }
         .wrapper .section-comments__items__item__p {
-          font-size: 14px;
+          font-size: 1em;
           font-weight: 300; }
   .wrapper .section-faq {
     grid-column: 2/3;
     grid-row: 6/7;
-    margin-top: 50px; }
-    .wrapper .section-faq__h2:after {
-      left: 120px; }
-    .wrapper .section-faq__h2:before {
-      right: 120px; }
+    margin-top: 3em; }
     .wrapper .section-faq__items__item__list {
       background: #0085f9;
-      padding: 15px 20px;
-      border-radius: 32px;
+      padding: 0.9em 1.3em;
+      border-radius: 2em;
       color: #fff;
-      display: block;
-      margin-top: 20px; }
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 1.3em;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
       .wrapper .section-faq__items__item__list:hover {
         -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
         cursor: pointer; }
       .wrapper .section-faq__items__item__list__arrow {
-        float: right;
-        margin-right: 5px;
         -webkit-transition: ease-in-out all 0.3s;
         -o-transition: ease-in-out all 0.3s;
         transition: ease-in-out all 0.3s; }
     .wrapper .section-faq__items__item__text {
-      padding: 0 20px;
-      font-size: 16px;
-      line-height: 25px;
+      padding: 0 1.25em;
+      font-size: 1em;
+      line-height: 1.5em;
       display: none;
       -webkit-transition: ease-in-out all 0.5s;
       -o-transition: ease-in-out all 0.5s;
@@ -1008,6 +1016,43 @@ html, body {
         .wrapper .section-application__app__submit:hover {
           background: #0085f9;
           color: #f9fcff; }
+  .wrapper .section-contacts {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .wrapper .section-contacts__h3 {
+      font-size: 2em;
+      line-height: 1.5em; }
+      .wrapper .section-contacts__h3:hover .section-contacts__h3__span {
+        background: #000; }
+      .wrapper .section-contacts__h3:hover {
+        cursor: pointer; }
+      .wrapper .section-contacts__h3__span {
+        background: #0085f9;
+        color: #fff;
+        padding: 0.1em 0.5em;
+        -webkit-transition: ease-in-out all 0.3s;
+        -o-transition: ease-in-out all 0.3s;
+        transition: ease-in-out all 0.3s; }
+    .wrapper .section-contacts__email {
+      font-size: 2em; }
   .wrapper .footer {
     grid-column: 1/4;
     grid-row: 8/9;
@@ -1059,8 +1104,7 @@ html, body {
       -webkit-box-align: center;
       -webkit-align-items: center;
       -ms-flex-align: center;
-      align-items: center;
-      height: 10rem; }
+      align-items: center; }
       .wrapper .header-logo {
         grid-column: 1/4;
         grid-row: 1/2; }
@@ -1085,11 +1129,31 @@ html, body {
 
 @media (max-width: 809px) {
   html, body {
-    font-size: 15px; }
+    font-size: 14px; }
   .wrapper {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 0fr 1fr 0fr; }
+    .wrapper .header {
+      font-size: 1.5em; }
+    .wrapper .second-block__text {
+      font-size: 2em; }
     .wrapper .second-block__button {
-      margin-top: 5em !important; } }
+      margin-top: 2em !important;
+      margin-left: 0;
+      font-size: 1em; }
+    .wrapper .second-block__imgblock {
+      font-size: 0.8em; }
+    .wrapper .second-block__circle {
+      font-size: 0.8em; }
+    .wrapper .section-best {
+      font-size: 1.5em; }
+    .wrapper .section-comments {
+      font-size: 1.5em; }
+    .wrapper .section-faq {
+      font-size: 1.5em; } }
+
+@media (max-width: 499px) {
+  .wrapper .second-block__button {
+    font-size: 0.9em; } }
 
 @font-face {
   font-family: "Roboto Condensed";

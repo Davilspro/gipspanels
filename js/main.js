@@ -36,8 +36,26 @@ $('.section-callback-form__submit').click(function() {
         $('.section-callback-form__good').css('display','none');
       }, 1800);      
 });
-
+var cartColich;
 var style = $('.section-cart');
+
+$('.section-catalog__items__item__button').click(function() {
+    var cartImg = $(this).parent().children('img').attr('src');
+    $('.section-cart-block__img').attr('src',cartImg);
+    var cartName = $(this).parent().children('.section-catalog__items__item__name').text();
+    $('.section-cart-block__h3').text(cartName);    
+    cartCost = $(this).parent().children('.section-catalog__items__item__price').text();
+    console.log(cartCost);
+
+    style.css('opacity','1');
+    style.css('display','flex');
+
+    $('.section-cart-block__itog').css('display','none');
+    $('.section-cart-block__itog').html(cartCost * cartColich + ' ' + '<i class="fas fa-ruble-sign"></i>');        
+    cartColich = null;    
+    $('.section-cart-block__colichinput').val('');
+    
+});
 
 $('.section-best__items__item__button').click(function() {
     var cartImg = $(this).parent().children('img').attr('src');
@@ -49,9 +67,14 @@ $('.section-best__items__item__button').click(function() {
 
     style.css('opacity','1');
     style.css('display','flex');
+
+    $('.section-cart-block__itog').css('display','none');
+    $('.section-cart-block__itog').html(cartCost * cartColich + ' ' + '<i class="fas fa-ruble-sign"></i>');        
+    cartColich = null;    
+    $('.section-cart-block__colichinput').val('');
 });
 
-var cartColich;
+
 
 $('.section-cart-block__sum').click(function() {
     cartColich = $('.section-cart-block__colichinput').val();

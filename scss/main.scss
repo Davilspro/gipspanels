@@ -91,7 +91,7 @@ html, body {
     .header {
         width: 100%;
         background: $header_color;
-        height: 5.6rem;
+        padding: 0.6em 0;
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
         grid-row: 1fr;
@@ -110,7 +110,7 @@ html, body {
             grid-row: 1/2;
 
             >img {
-                height: 3.75rem;
+                height: 3.75em;
             }
         }
 
@@ -124,7 +124,7 @@ html, body {
                 margin: 0 0.6em;
                 text-decoration: none;
                 font-family: $main_font, sans-serif;
-                font-size: 1rem;
+                font-size: 1em;
                 font-weight: 400;
                 color: $text_color;
                 position: relative;
@@ -160,11 +160,11 @@ html, body {
             flex-wrap: nowrap;
             justify-content: flex-end;
             padding: 0 0.9rem;
-            width: 18.75rem;
+            width: 18.75em;
 
             &__link {
                 text-decoration: none;
-                font-size: 0.9rem;
+                font-size: 0.9em;
                 font-family: $main_font, sans-serif;
                 font-weight: 500;
                 margin: 0 2%;
@@ -437,20 +437,26 @@ html, body {
             width: 100%;
             height: 100%;
 
+            &:hover {
+                cursor: pointer;
+            }
+
             &:hover .cartGallery-wrap__cross {
                 color: #fff;
             }
 
             &__cross {
-                font-size: 3em;
+                font-size: 2em;
                 margin: 0.5em 1em;
                 color: #e7e7e7;
+                z-index: 15;
             }
         }
 
         &__imgBlock {
             position: relative;
             z-index: 2;
+            box-shadow: 0 0 5em rgba(0,0,0,0.8);
 
             &__zone {
                 width: 50px;
@@ -492,7 +498,8 @@ html, body {
             }
             
             &__img {
-                width: 500px;
+                max-width: 30em;
+                min-width: 10em;
                 border-radius: 8px;
             }
         }
@@ -774,6 +781,7 @@ html, body {
         grid-column: 2/3;
         grid-row: 4/5;
         margin-top: 3.12em;
+        font-size: 1em;
 
         &__h2 {
             &:after {
@@ -880,17 +888,7 @@ html, body {
     .section-comments {
         grid-column: 2/3;
         grid-row: 5/6;
-        margin-top: 50px;
-
-        &__h2 {
-            &:after {
-                left: 120px;        
-            }
-
-            &:before {
-                right: 120px;        
-            }
-        }
+        margin-top: 3em;        
 
         &__items {
             display: flex;
@@ -900,11 +898,11 @@ html, body {
             justify-content: center;
 
             &__item {
-                width: 230px;
-                padding: 10px;
+                width: 15em;
+                padding: 0.7em;
 
                 &__img {
-                    width: 180px;
+                    width: 11.25em;
                     border-radius: 50%;
                     box-shadow: $shadow;
                     display: block;
@@ -913,14 +911,14 @@ html, body {
 
                 &__name {
                     display: block;
-                    font-size: 18px;
+                    font-size: 1.1em;
                     font-weight: 600;
-                    padding: 10px 0;
+                    padding: 0.6em 0;
                     text-align: center;
                 }
 
                 &__p {
-                    font-size: 14px;
+                    font-size: 1em;
                     font-weight: 300;
                 }
             }
@@ -930,27 +928,19 @@ html, body {
     .section-faq {
         grid-column: 2/3;
         grid-row: 6/7;
-        margin-top: 50px;
-
-        &__h2 {
-            &:after {
-                left: 120px;        
-            }
-
-            &:before {
-                right: 120px;        
-            }
-        }
+        margin-top: 3em;
 
         &__items {
             &__item {
                 &__list {
                     background: $main-color;
-                    padding: 15px 20px;
-                    border-radius: 32px;
+                    padding: 0.9em 1.3em;
+                    border-radius: 2em;
                     color: #fff;
-                    display: block;
-                    margin-top: 20px;
+                    display: flex;
+                    margin-top: 1.3em;
+                    justify-content: space-between;
+                    align-items: center;
 
                     &:hover {
                         box-shadow: $shadow;
@@ -958,17 +948,15 @@ html, body {
                     }
 
                     &__arrow {
-                        float: right;
-                        margin-right: 5px;
                         //transform: rotate(180deg);
                         transition: ease-in-out all 0.3s;
                     }
                 }
 
                 &__text {
-                    padding: 0 20px;
-                    font-size: 16px;
-                    line-height: 25px;
+                    padding: 0 1.25em;
+                    font-size: 1em;
+                    line-height: 1.5em;
                     display: none;
                     transition: ease-in-out all 0.5s;
                 }
@@ -1081,6 +1069,40 @@ html, body {
                     color: lighten($main_color, 50%);
                 }
             }
+        }
+    }
+
+    .section-contacts {        
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin-top: 50px; 
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column; 
+
+        &__h3 {
+            font-size: 2em;
+            line-height: 1.5em;
+
+            &:hover .section-contacts__h3__span {
+                background: #000;                
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &__span {
+                background: $main_color;
+                color: #fff;
+                padding: 0.1em 0.5em;
+                transition: ease-in-out all 0.3s;
+            }
+        }
+
+        &__email {
+            font-size: 2em;
         }
     }
 
