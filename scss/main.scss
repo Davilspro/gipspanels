@@ -511,6 +511,7 @@ html, body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: stretch;
 
         &__block {
             margin: 2px;
@@ -519,6 +520,9 @@ html, body {
             justify-content: center;
             align-items: center;
             transition: ease-in-out all 0.3s;
+            height: 16em;
+            overflow: hidden;
+            border-radius: 8px;
 
             &__zoom {
                 position: absolute;
@@ -799,6 +803,7 @@ html, body {
             justify-content: flex-start;
             flex-wrap: wrap;
             justify-content: center;
+            align-items: flex-start;
 
             &__item {
                 width: 15.62em;

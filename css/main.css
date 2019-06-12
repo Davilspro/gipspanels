@@ -478,7 +478,11 @@ html, body {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
     .wrapper .gallery__block {
       margin: 2px;
       position: relative;
@@ -496,7 +500,10 @@ html, body {
       align-items: center;
       -webkit-transition: ease-in-out all 0.3s;
       -o-transition: ease-in-out all 0.3s;
-      transition: ease-in-out all 0.3s; }
+      transition: ease-in-out all 0.3s;
+      height: 16em;
+      overflow: hidden;
+      border-radius: 8px; }
       .wrapper .gallery__block__zoom {
         position: absolute;
         font-size: 3em;
@@ -762,7 +769,11 @@ html, body {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start; }
       .wrapper .section-best__items__item, .wrapper .section-catalog__items__item {
         width: 15.62em;
         padding: 0.9em;
