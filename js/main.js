@@ -133,3 +133,7 @@ $('.--zone-right').click(function() {
 
     cartBlock.children('.cartGallery__imgBlock').children('img').attr('src', galSrcImg);
 })
+
+$('.cartGallery-wrap').click(function() {
+    $('.cartGallery').css('display','none');
+})
